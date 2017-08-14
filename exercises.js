@@ -50,7 +50,7 @@ console.log(canVote(17));
  * Console.log your result.
 */
 function login(password){
-	if (password = "test1234"){
+	if (password === "test1234");{
 		return "Login Success!";
 	}
 
@@ -71,8 +71,14 @@ console.log(login("test1234"));
  * Console.log your result.
 */
 
-
-
+function isGreaterThan(first,second){
+	if (first > second){
+		return true;
+	}else {
+		return false;
+	}
+}
+console.log(isGreaterThan(8,5));
 /*
  * #4
  * Function - mustBeTrue
@@ -85,8 +91,15 @@ console.log(login("test1234"));
  * Console.log your result.
 */
 
+function mustBeTrue(boo){
+	if (boo === true){
+		return true;
+	}else{
+		return false;
+	}
+}
 
-
+console.log(boo=false);
 /*
  * #5
  * Function - bigBird
@@ -98,8 +111,15 @@ console.log(login("test1234"));
  * The function will return the message "Word to Big Bird!", if the string passed into the function is a three-letter word.
  * Console.log your result.
 */
-
-
+function bigBird(word){
+	if (word.length == 3) {
+		return "Word to Big Bird!";
+	} else {
+		return "moo moo moo" ;
+}
+}
+var map = bigBird("moo");
+console.log(map);
 
 /*
  * #6
@@ -113,7 +133,14 @@ console.log(login("test1234"));
  * If the strings are equal, the function will return the message "You look mahvelous!" Otherwise, return the message: "I don't know who you are anymore."
  * Console.log your result.
 */
-
+function isEqual(first, second){
+	if (first === second === true)  {
+		return "You look mahvelous!";
+} else { return "I don't know who you are anymore.";
+	}
+}
+var rabbit = isEqual("boo", "boo");
+console.log(rabbit);
 
 /*
  * #7
@@ -127,8 +154,16 @@ console.log(login("test1234"));
  * If the strings are not equal, the function will return the message "Opposites do attract." Otherwise, return the message: "Cause it's like you're my mirror."
  * Console.log your result.
 */
+function notEqual(first, second){
+	if (first != second)
+		return "Opposites do attract.";
+	else{
+	return "Cause it's like you're my mirror.";
+	}
+}
 
-
+var suds = notEqual("boo", "boo");
+console.log(suds);
 /*
  * #8
  * Function - spareChange
@@ -140,8 +175,15 @@ console.log(login("test1234"));
  * The function will return true if the number passed into the function is greater than 100, otherwise it will return false.
  * Console.log your result.
 */
-
-
+function spareChange(money){
+	if (money > 100)
+		return true;
+	else {
+		return false;
+	}
+}
+var coins = spareChange(110);
+console.log(coins);
 
 /*
  * #9
@@ -156,8 +198,15 @@ console.log(login("test1234"));
  * The function will return true if the sum of all the number values is greater than 30, otherwise it will return false.
  * Console.log your result.
 */
-
-
+function dirty30(one,two,three){
+	if (one + two + three > 30)
+		return true;
+	else {
+		return false;
+	}
+}
+var mop = dirty30(20,20,20);
+console.log(mop);
 
 /*
  * #10
@@ -170,8 +219,16 @@ console.log(login("test1234"));
  * The function will return true if the number passed in is an even integer, otherwise it will return false.
  * Console.log your result.
 */
+function evenStevens(num){
+	if (num % 2 == 0)
+		return true;
+	else {
+		return false;
+	}
 
-
+}
+var moo = evenStevens(3);
+console.log(moo);
 
 
 /*
@@ -186,8 +243,16 @@ console.log(login("test1234"));
  * If BOTH values are 21 or over, the function will return the message: "Welcome to the Legends Lounge." Otherwise, it will return the message: "Chuck E Cheese is across the street."
  * Console.log your result.
 */
+function daClub(cover, age){
+	if (cover && age >= 21)
+		return ("Welcome to the Legends Lounge");
+	else {
+		return ("Chuck E Cheese is across the street.");
+	}
+}
 
-
+var fridayNight = daClub(22, 22);
+console.log(fridayNight);
 /*
  * #12
  * Function - graduation
@@ -200,8 +265,15 @@ console.log(login("test1234"));
  * If EITHER the number value is greater than or equal to 120 or the boolean value is true, then the function will return the message: "Congratulations on a job well done." Otherwise, return the message: "See you in summer school."
  * Console.log your result.
 */
-
-
+function graduation(credits, thesis){
+	if (credits >= 120 || thesis === true)
+		return ("Congratulations on a job well done.");
+	else{
+		return ("See you in summer school.");
+	}
+}
+var school = graduation(125, true);
+console.log(school);
 
 /*
  * #13
@@ -214,7 +286,17 @@ console.log(login("test1234"));
  * The function will return the message: "You are riding Honolulu's Rail.", if the number value is less than 50, otherwise it will return the message: "You are riding an Amtrak.", if the number value is less than 100, and return the message: "Now you ballin' in the Shinkansen!", if the number value is greater than or equal to 100.
  * Console.log your result.
 */
-
+function moneyTrain(speed){
+	if (speed < 50)
+		return "You are riding Honolulu's Rail";
+	}else if (speed <100) {
+		return "You are riding an Amtrak";
+	}else{
+		(speed >= 100)
+		return "Now you ballin' in the Shinkansen!";
+	}
+	var train = moneyTrain(110);
+	console.log(train);
 
 /*
  * #14
@@ -229,7 +311,18 @@ console.log(login("test1234"));
  * Invoke your function again.
  * Console.log budget and doughnutBought again.
 */
+var budget = 22;
+var doughnutPrice = 4;
+var doughnutBought = 0;
 
+function buyDoughnut(){
+	(budget - doughnutPrice);
+	return (doughnutBought++);
+}
+var doughnut = (buyDoughnut(0));
+console.log(budget);
+console.log(doughnutBought);
+console.log(doughnut);
 
 
 
@@ -260,14 +353,19 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 4"
  * "Player: 5"
 */
-
+var player = ['1','2','3','4','5'];
+for (var i = 0; i<player.length; i++){
+	console.log("Player: " + player[i]);
+}
 
 /*
  * #16
  * Create a for loop that will iterate and console.log each item in the array below:
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
-
+for ( var i = 0; i<myFavFoods.length; i++){
+	console.log(myFavFoods[i]);
+}
 
 /*
  * #17
@@ -284,7 +382,12 @@ for (var i = 0; i<toyotaModels.length; i++){
  * Console.log your result.
 */
 
+var numArray = [1,2,3,4,5];
+var total = numArray.reduce(function(a,b) {
+    return (+a)+(+b);
+});
 
+console.log(total);
 
 /*
  * #18
@@ -299,6 +402,10 @@ for (var i = 0; i<toyotaModels.length; i++){
 */
 
 var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"];
+
+
+
+
 /*
  * #19
  * Function - subways
@@ -326,12 +433,10 @@ Final Boss
  *  The function will loop through the string value and put all the letters into an array, except for the letter "A" and "a". We don't want no stinking "A" or "a" in our array. Test your function with the `phrase` below!
 */
 
-var phrase = "An apple a day keeps Alice feeling awesome!";
+var str = "An apple a day keeps Alice feeling awesome!";
 
-
-
-
-
+var res = str.replace(/a/gi,"");
+console.log(res);
 
 
 
