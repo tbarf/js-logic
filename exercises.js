@@ -50,8 +50,11 @@ console.log(canVote(17));
  * Console.log your result.
 */
 function login(password){
-	if (password === "test1234");{
+	if (password === "test1234"){
 		return "Login Success!";
+	}
+	else{
+		return "Failed!";
 	}
 
 }
@@ -112,7 +115,7 @@ console.log(boo=false);
  * Console.log your result.
 */
 function bigBird(word){
-	if (word.length == 3) {
+	if (word.length === 3) {
 		return "Word to Big Bird!";
 	} else {
 		return "moo moo moo" ;
@@ -220,7 +223,7 @@ console.log(mop);
  * Console.log your result.
 */
 function evenStevens(num){
-	if (num % 2 == 0)
+	if (num % 2 === 0)
 		return true;
 	else {
 		return false;
@@ -317,13 +320,15 @@ var doughnutPrice = 4;
 var doughnutBought = 0;
 
 function buyDoughnut(){
-	(budget - doughnutPrice);
-	return (doughnutBought++);
+	budget -= doughnutPrice;
+	 doughnutBought++;
 }
-var doughnut = (buyDoughnut(0));
-console.log(budget);
-console.log(doughnutBought);
-console.log(doughnut);
+buyDoughnut();
+console.log("budget", + budget);
+console.log("doughnutBought", doughnutBought);
+buyDoughnut();
+console.log("budget", + budget);
+console.log("doughnutBought", doughnutBought);
 
 
 
@@ -390,6 +395,13 @@ var total = numArray.reduce(function(a,b) {
 
 console.log(total);
 
+var numArray = [1,2,3,4,5]
+var sum = 0;
+for(var i = 0; i<numArray.length; i++) {
+	console.log(sum += numArray[i]);
+}
+console.log(sum);
+
 /*
  * #18
  * Function - allStars
@@ -432,15 +444,24 @@ console.log(east);
 */
 
   var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
-function subways(special){
+
+function subways (special){
+var sum = 0;
+for(var i = 0; i<special.length; i++) {
+	if(i % 2 === 1){
+		console.log(special[i]);
+		special[i] = "Classic Tuna";
+	}
+}
 
 }
 
-
-var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
-var subOftheDaynum = subOftheDay.length;
-subOftheDay.forEach(function(subOftheDaynum, i) { if (subOftheDaynum % 2 != 0) subOftheDay[i] = "Classic Tuna"; });
-console.log(subOftheDay, i);
+subways(subOftheDay);
+console.log(subOftheDay);
+// var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
+// var subOftheDaynum = subOftheDay.length;
+// subOftheDay.forEach(function(subOftheDaynum, i) { if (subOftheDaynum % 2 != 0) subOftheDay[i] = "Classic Tuna"; });
+// console.log(subOftheDay, i);
 /*
 Final Boss
  * #20
@@ -453,10 +474,21 @@ Final Boss
  *  The function will loop through the string value and put all the letters into an array, except for the letter "A" and "a". We don't want no stinking "A" or "a" in our array. Test your function with the `phrase` below!
 */
 
+function removeLetter(arr){
+	for (var i = 0; i < str.length; i++) {
+  console.log(list[i]);
+}
+}
+
+
+
 var str = "An apple a day keeps Alice feeling awesome!";
 
 var res = str.replace(/a/gi,"");
 console.log(res);
+
+
+
 
 
 
