@@ -395,7 +395,7 @@ var total = numArray.reduce(function(a,b) {
 
 console.log(total);
 
-var numArray = [1,2,3,4,5]
+var numArray = [1,2,3,4,5];
 var sum = 0;
 for(var i = 0; i<numArray.length; i++) {
 	console.log(sum += numArray[i]);
@@ -473,21 +473,20 @@ Final Boss
  *
  *  The function will loop through the string value and put all the letters into an array, except for the letter "A" and "a". We don't want no stinking "A" or "a" in our array. Test your function with the `phrase` below!
 */
+ var phrase = "An apple a day keeps Alice feeling awesome!";
 
-function removeLetter(arr){
-	for (var i = 0; i < str.length; i++) {
-  console.log(list[i]);
-}
-}
-
-
-
-var str = "An apple a day keeps Alice feeling awesome!";
-
-var res = str.replace(/a/gi,"");
-console.log(res);
-
-
+  function removeLetter(str){
+    var newArr = [];
+    for(var i = 0; i<str.length; i++){
+      console.log(str[i]);
+      if(str[i] !== 'a' && str[i] !== "A"){
+        newArr.push(str[i]);
+      }
+    }
+    console.log(newArr);
+    return newArr;
+  }
+removeLetter(phrase);
 
 
 
