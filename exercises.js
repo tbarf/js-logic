@@ -287,15 +287,16 @@ console.log(school);
  * Console.log your result.
 */
 function moneyTrain(speed){
-	if (speed < 50)
+	if (speed < 50){
 		return "You are riding Honolulu's Rail";
-	}else if (speed <100) {
-		return "You are riding an Amtrak";
-	}else{
-		(speed >= 100)
+	}else if
+    (speed <100) {
+      return "You are riding an Amtrak";
+	}else
+		(speed >= 100);
 		return "Now you ballin' in the Shinkansen!";
 	}
-	var train = moneyTrain(110);
+	var train = moneyTrain(30);
 	console.log(train);
 
 /*
@@ -401,9 +402,21 @@ console.log(total);
  * Console.log both the east and west arrays.
 */
 
-var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"];
+var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"],
+    east = [],
+    west = [];
 
+for (var i=0;i<players.length;i++){
+    if ((i+2)%2==0) {
+        west.push(players[i]);
+    }
+    else {
+        east.push(players[i]);
+    }
+}
 
+console.log(west);
+console.log(east);
 
 
 /*
@@ -419,8 +432,15 @@ var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Si
 */
 
   var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
+function subways(special){
+
+}
 
 
+var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
+var subOftheDaynum = subOftheDay.length;
+subOftheDay.forEach(function(subOftheDaynum, i) { if (subOftheDaynum % 2 != 0) subOftheDay[i] = "Classic Tuna"; });
+console.log(subOftheDay, i);
 /*
 Final Boss
  * #20
