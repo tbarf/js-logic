@@ -446,7 +446,6 @@ console.log(east);
   var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
 
 function subways (special){
-var sum = 0;
 for(var i = 0; i<special.length; i++) {
 	if(i % 2 === 1){
 		console.log(special[i]);
